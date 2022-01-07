@@ -1,6 +1,6 @@
 let db;
 // creates a new db request for the budget database -> update this to use whatever your mongoose atlas name is
-const request = indexedDB.open("budget-tracker", 1);
+const request = indexedDB.open("easy-budget-tracker", 1);
 
 request.onupgradeneeded = (event) => {
     // creates object store called pending while setting autoIncrement to true
