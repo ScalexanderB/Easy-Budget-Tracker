@@ -1,3 +1,10 @@
+const indexedDB = 
+    window.indexedDB ||
+    window.mozIndexedDB ||
+    window.webkitIndexedDB ||
+    window.msIndexedDB ||
+    window.shimIndexedDB;
+
 let db;
 // creates a new db request for the budget database -> update this to use whatever your mongoose atlas name is
 const request = indexedDB.open("easy-budget-tracker", 1);
